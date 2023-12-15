@@ -1,2 +1,2 @@
 # DataEngineeringProjects
-A repository to safekeep data engineering finished projects, boilerplates, starter-kits and notes. 
+Repository to maintain data engineering projects, boilerplate/starter kits, references, and notes. 
