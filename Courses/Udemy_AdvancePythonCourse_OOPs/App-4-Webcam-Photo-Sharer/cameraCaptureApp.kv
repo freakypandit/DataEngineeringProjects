@@ -6,12 +6,37 @@
          resolution: (648, 480)
          play: False
       Button: 
-         text: 'Start Camera' if root.ids.camera.play == False else 'Stop Camera'
+         id: camera_button
+         text: 'Start Camera'
          on_press: root.start() if root.ids.camera.play == False else root.stop()
       Button: 
          text: 'Capture'
+         on_press: root.capture()
+
+
+<ImageScreen>:
+   GridLayout:
+      cols:1 
+      Image: 
+         id: img_id
+      Button: 
+         text: 'Create Sharable link'
+         on_press: root.createSharableLink()
+      Label: 
+         text: ''
+      GridLayout:
+         cols: 2
+         Button: 
+            text: 'Copy Link'
+         Button:
+            text: 'Open Link'
+
 
 <RootWidget>:
    CameraScreen:
       id: camera_screen
       name: 'camera_screen'
+   ImageScreen:
+      id: image_screen
+      name: 'image_screen'
+
